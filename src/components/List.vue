@@ -14,7 +14,14 @@
 <script>
 export default {
     name: 'List',
-    props:['movie'],
+    computed: {
+        movie() {
+            return this.$store.state.movies
+        }
+    },
+    created(){
+        this.$store.dispatch('fetchMovie')
+    }
 }
 </script>
 

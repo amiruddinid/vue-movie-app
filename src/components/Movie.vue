@@ -1,7 +1,7 @@
 <template>
   <div class="movieApp">
     <h1>Movie</h1>
-    <List :movie="movies"/>
+    <List />
   </div>
 </template>
 
@@ -11,8 +11,7 @@
         name: 'Movie',
         components: {
             List
-        },
-        props:['movies'],
+        }
     }
 </script>
 
